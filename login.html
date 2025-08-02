@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartCode Login</title>
+    <link rel="stylesheet" href="assets/estilo/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <form action="" id="formLogin">
+        <div class="painel-login">
+            <div class="logo">
+               <h2><strong class="lt">&lt;</strong>SC<strong class="barra">/</strong><strong class="gt">&gt;</strong></h2>
+            </div>
+            <div class="title-login">
+                <h3>Start<strong>C</strong>ode</h3>
+            </div>
+            <div class="inputs">
+                <div class="inputs-group">
+                    <label for="email">E-mail:</label>
+                    <i class="fa-solid fa-circle-user user"></i>
+                    <input value="" type="text" name="userswj" id="email" placeholder="example@example.com">
+                </div>
+
+                <div class="inputs-group">
+                    <label for="senha">Senha:</label>
+                    <i class="fa-solid fa-key password"></i>
+                    <input value="" type="password" name="senha" id="senha" placeholder="*********">
+                    
+                </div>
+                <div class="error">
+                <div class='flex' style='display: flex; align-items: center; justify-content: center;'><label class='error' style='color: #ffff; font-size: 0.8rem;'></label><i class='fa-solid fa-circle-exclamation' style='color:#fff'></i></div>
+                    </div>
+            </div>
+            <button type="submit" class="btn-logar">Logar</button>
+
+            <div class="ip">
+                <i class="fa-solid fa-globe"></i>
+                <p id="meuip">Carregando....</p>
+                
+            </div>
+
+            <div class="version">
+                <p id="meuip">Version 1.0.0</p>
+            </div>
+        </div>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", function(e){
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            //validando 
+            if (email === "admin" && senha === "123")
+        {
+            window.location.href = "index.html";
+        }
+        else{
+            alert("Usuario incorreto");
+        }
+        });
+        fetch('https://api.ipify.org?format=json') //Requisitando a API ipify em formato de json
+      .then(resposta => resposta.json())
+      .then(dados => { //tratando os dados convertidos em JSON
+      //ex dados = { ip: "123.456.789.101" }.
+        document.getElementById('meuip').innerText = dados.ip;
+      })
+      .catch(erro => {
+        document.getElementById('meuip').innerText = 'Erro ao obter IP';
+        console.error('Erro:', erro);
+      });
+
+      /*
+      FUNÇÃO DO IPV6 DESABILITADA
+    fetch('https://api64.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('ipv6').innerText = data.ip;
+    })
+    .catch(error => {
+        document.getElementById('ipv6').innerText = 'Erro ao obter o IPV6';
+        console.error('Erro:', error);
+    });
+    */
+
+    </script>
+</body>
+</html>

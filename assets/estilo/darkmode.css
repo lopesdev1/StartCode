@@ -1,0 +1,45 @@
+body.dark .section-session{
+    background-color: #040616;;
+}
+body.dark .section-conteudo{
+    background-color: #020414;;;
+}
+
+body.dark{
+    background-color: #111;
+}
+
+body.dark #container-header{
+    background-color: #111;
+}
+
+body.dark .content-primary{
+    background-color: #6f7be7;
+}
+
+.darkm i{
+    transition: .7s;
+}
+body.dark .darkm i{
+    color: #141a52;;
+}
+
+
+body.dark .bloco-group{
+    background-color: #070a25;;;
+}
+body.dark .title-bloco{
+    background-color: #0b1357;;
+    border-bottom: 0.3rem solid rgba(15, 22, 121, 0.344);
+}
+body.dark .bloco-group button{
+    background-color: #404896;
+    color: #fff;
+}
+body.dark .bloco-group p{
+    color: #f9f9f9;
+}
+
+body.dark .title{
+    color: #fff;
+}

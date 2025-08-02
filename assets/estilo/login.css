@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #040616;;;
+    font-family: 'Poppins', sans-serif;
+}
+.bloco-conteudo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.logo img{
+    width: 50%;
+}
+.title-login{
+    position: relative;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to bottom, rgb(94, 93, 95), rgb(212, 215, 218), rgb(159, 184, 181));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+
+}
+input{
+    outline: none;
+}
+.painel-login{
+    width: 30vw;
+    height: 80vh;
+    background-color: #02051d;;;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.4rem;
+    border: 0.2rem solid#06091f;;;;
+}
+.painel-cadastro{
+    width: 30vw;
+    height: 95vh;
+    background-color: #02051d;;;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.4rem;
+    border: 0.2rem solid#06091f;;;;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs-group label{
+    color: #f9f9f9f9;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+strong{
+    background-image: linear-gradient(to bottom, rgb(66, 146, 236), rgb(24, 92, 161), rgb(101, 158, 243));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+.lt{
+    color: #4956b6;
+}
+.gt{
+    color: #4956b6;
+}
+.barra{
+    color: #4956b6;
+}
+.logo{
+    width: 10vw;
+    background-color: #10143a;
+    color: #fff;
+    border-radius: 1rem 3rem;
+    border-bottom: 0.3rem solid #4956b6;
+}
+.user{
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: -15rem;
+    font-size: 1.5rem;
+    color:#4956b6
+}
+.password{
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: -15rem;
+    font-size: 1.3rem;
+    color:#4956b6
+}
+
+.inputs-group{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    align-items: center;
+}
+
+.inputs-group input{
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 1px 5px rgba(105, 97, 97, 0.334);
+}
+
+.btn-logar{
+    padding: 1rem 7.5rem;
+    border: none;
+    background-color: #242d72;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    border-bottom: 0.2rem solid #38449c;
+    animation: pulse 3s infinite;
+    transition: .4s;
+}
+.btn-registrar{
+    padding: 1rem 7.5rem;
+    border: none;
+    background-color: #242d72;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    border-bottom: 0.2rem solid #38449c;
+    animation: pulse 3s infinite;
+    transition: .4s;
+    margin-top: 1rem;
+}
+.error{
+    color: #fff;
+}
+button:hover{
+    transition: .4s;
+    background-color: #4b5494;
+    border-bottom: 0.2rem solid #262f7e;
+    cursor: pointer;
+}
+.inputs-radio{
+    gap: 0.5rem;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.password-recod a{
+    gap: 0.5rem;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    transition: .4s ease-in-out;
+
+}
+.password-recod a:hover{
+    color: #38449c;
+    transition: .4s ease-in-out;
+}
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(16, 60, 90, 0.7);
+    }
+
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(58, 136, 189, 0);
+    }
+
+}
+
+.ip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    background-image: linear-gradient(to bottom, rgb(129, 128, 131), steelblue, rgb(6, 24, 22));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: black;
+    margin-top: 1rem;
+    border-bottom: 0.1rem solid #242d72;
+    border-radius: 1rem;
+    width: 10rem;
+    text-align: center;
+}
+.ip:hover{
+    cursor:default;
+    
+}
+.version{
+    background-image: linear-gradient(to bottom, rebeccapurple, rgb(7, 28, 44), turquoise);
+    /*Apagando o fundo*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.version p{
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+.version p:hover{
+    cursor: default;
+}
+/*
+@media screen and (min-width: 320px)
+{
+    .painel-login{
+        width: 100%;
+    }
+    .inputs-group input{
+        padding: 0.8rem 1rem;
+    }
+    .inputs-group i{
+        display: none;
+    }
+
+    .btn-logar{
+        padding: 1rem 5rem;
+    }
+}
+*/
