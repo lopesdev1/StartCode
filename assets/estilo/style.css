@@ -8,9 +8,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body{
     background-color: #f8f8f8f8;
-    max-width: 100vw;
+    width: 100%;
     transition: .7s;
     overflow-x: hidden;
 }
@@ -167,17 +171,22 @@ header{
 /*------------------*/
 
 /*Parte do body */
-.section-conteudo-primary{
+.section-header-primary{
     display: flex;
-    height: 100vh;
-    background-image: url("https://i.imgur.com/1rI9Zyj.jpeg");
-    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/img/bg.jpg");
     background-size: cover;
     border-radius: 0 0 1rem 1rem;
     opacity: 0.8;
-    max-width: 100%;
+}
+.section-conteudo-primary{
+    width: 100%;
+    height: 100vh;
     transition: .6s ease-in-out;
-    
+    top: 50%;
+    left: 50%;
+    transform:translate(-25%, 20%)
 }
 .section-conteudo-primary:hover{
     transition: .6s ease-in-out;
@@ -427,14 +436,10 @@ footer{
 @media screen and (min-width: 360px)
 {
     .bloco-group{
-        width: 1000vw;
-    }
-    html,body{
-        max-width: 100%;
+        width: 100%;
     }
     #container-header{
         width: 100%;
-        overflow: hidden;
     }
     nav{
         display: none;
@@ -450,6 +455,10 @@ footer{
         background-position: center;
         
 
+    }
+    .section-conteudo-primary{
+        margin-left: 4rem;
+        margin-top: 5rem;
     }
     .content-primary{
         display: none;
@@ -518,8 +527,14 @@ footer{
         font-size: 0.8rem;
         padding: 1rem 3rem;
     }
+    .perfil-name{
+        color: #ddd;
+    }
+    .img-perfil {
+        display: none;
+    }
     .settings-information{
-        
+        margin-left: -1rem;
     }
 }
 
