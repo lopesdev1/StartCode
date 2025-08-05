@@ -21,13 +21,13 @@
                 <div class="inputs-group">
                     <label for="email">E-mail:</label>
                     <i class="fa-solid fa-circle-user user"></i>
-                    <input value="" type="text" name="userswj" id="email" placeholder="example@example.com">
+                    <input value="" type="email" name="email" id="email" placeholder="example@example.com" required>
                 </div>
 
                 <div class="inputs-group">
                     <label for="senha">Senha:</label>
                     <i class="fa-solid fa-key password"></i>
-                    <input value="" type="password" name="senha" id="senha" placeholder="*********">
+                    <input value="" type="password" name="senha" id="senha" placeholder="*********" required>
                     
                 </div>
                 <div class="error">
@@ -56,7 +56,7 @@
             const senha = document.getElementById("senha").value;
 
             //validando 
-            if (email === "admin" && senha === "123")
+            if (email === "admin@admin.com" && senha === "123")
         {
             window.location.href = "page.html";
         }

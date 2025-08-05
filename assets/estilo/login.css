@@ -239,21 +239,42 @@ button:hover{
 .version p:hover{
     cursor: default;
 }
-/*
-@media screen and (min-width: 320px)
+.error{
+    display: none;
+}
+@media screen and (min-width: 300px)
 {
     .painel-login{
         width: 100%;
+        height: 55%;
+        padding: 1rem;
     }
     .inputs-group input{
-        padding: 0.8rem 1rem;
+        padding: 0.8rem 2rem;
     }
     .inputs-group i{
-        display: none;
+        margin-left: -14.3rem;
     }
 
     .btn-logar{
-        padding: 1rem 5rem;
+        padding: 1rem 6.5rem;
+        margin-top: 1rem;
     }
 }
-*/
+
+@media screen and (min-width: 1336px)
+{
+    .painel-login{
+        width: 28vw;
+    }
+    .inputs-group input{
+        padding: 0.8rem 3rem;
+    }
+    .inputs-group i{
+        display: block;
+        margin-left: -15rem;
+    }
+    .btn-logar{
+        padding: 1rem 7.5rem;
+    }
+}
